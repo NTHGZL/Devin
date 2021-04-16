@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_seance_curiosities",
+  "info": {
+    "name": "curiosity",
+    "icon": "glass-cheers"
+  },
+  "options": {},
+  "attributes": {
+    "description": {
+      "type": "richtext"
+    }
+  }
+}

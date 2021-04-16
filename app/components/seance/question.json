@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_seance_questions",
+  "info": {
+    "name": "Question",
+    "icon": "book",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "correct_answer": {
+      "type": "integer",
+      "min": 0,
+      "max": 3,
+      "default": 0
+    },
+    "answer": {
+      "type": "component",
+      "repeatable": true,
+      "component": "seance.answer"
+    },
+    "description": {
+      "type": "richtext"
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "kind": "collectionType",
+  "collectionName": "wines",
+  "info": {
+    "name": "Wine",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "winery": {
+      "type": "string",
+      "required": true
+    },
+    "vintage": {
+      "type": "string",
+      "maxLength": 4,
+      "minLength": 4
+    },
+    "color": {
+      "type": "enumeration",
+      "enum": [
+        "Rouge",
+        "Blanc",
+        "Rose"
+      ],
+      "required": true
+    },
+    "cepages": {
+      "type": "richtext",
+      "maxLength": 100,
+      "required": true
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "food_pairings": {
+      "via": "wines",
+      "collection": "food-pairing",
+      "dominant": true
+    },
+    "sessions": {
+      "via": "wine",
+      "collection": "session"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "food_pairings",
+  "info": {
+    "name": "Food pairing",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "pictogram": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "wines": {
+      "collection": "wine",
+      "via": "food_pairings"
+    }
+  }
+}

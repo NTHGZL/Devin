@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/food-pairings",
+      "handler": "food-pairing.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/food-pairings/count",
+      "handler": "food-pairing.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/food-pairings/:id",
+      "handler": "food-pairing.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/food-pairings",
+      "handler": "food-pairing.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/food-pairings/:id",
+      "handler": "food-pairing.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/food-pairings/:id",
+      "handler": "food-pairing.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

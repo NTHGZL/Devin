@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_seance_advice",
+  "info": {
+    "name": "advice",
+    "icon": "atlas"
+  },
+  "options": {},
+  "attributes": {
+    "description": {
+      "type": "richtext"
+    }
+  }
+}

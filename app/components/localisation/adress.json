@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_localisation_adresses",
+  "info": {
+    "name": "Adress",
+    "icon": "map-marker-alt"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "postalcode": {
+      "type": "string",
+      "required": true
+    },
+    "city": {
+      "type": "string"
+    },
+    "longitude": {
+      "type": "float"
+    },
+    "latitude": {
+      "type": "float"
+    }
+  }
+}

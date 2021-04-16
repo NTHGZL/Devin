@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sessions",
+  "info": {
+    "name": "Session",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "wine": {
+      "model": "wine",
+      "via": "sessions"
+    },
+    "step": {
+      "type": "dynamiczone",
+      "components": [
+        "seance.advice",
+        "seance.curiosity",
+        "seance.question"
+      ]
+    },
+    "stores": {
+      "via": "sessions",
+      "collection": "store"
+    }
+  }
+}
