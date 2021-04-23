@@ -1,5 +1,5 @@
 {
-  "collectionName": "components_seance_answers",
+  "collectionName": "components_session_answers",
   "info": {
     "name": "answer",
     "icon": "align-justify"
@@ -7,8 +7,7 @@
   "options": {},
   "attributes": {
     "title": {
-      "type": "string",
-      "required": true
+      "type": "string"
     }
   }
 }

@@ -30,8 +30,8 @@
       "required": false
     },
     "sessions": {
-      "collection": "session",
       "via": "stores",
+      "collection": "session",
       "dominant": true
     }
   }

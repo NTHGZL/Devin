@@ -32,17 +32,30 @@
       "model": "wine",
       "via": "sessions"
     },
-    "step": {
+    "stores": {
+      "collection": "store",
+      "via": "sessions"
+    },
+    "Nose": {
       "type": "dynamiczone",
       "components": [
-        "seance.advice",
-        "seance.curiosity",
-        "seance.question"
+        "session.question",
+        "session.advice"
       ]
     },
-    "stores": {
-      "via": "sessions",
-      "collection": "store"
+    "Eyes": {
+      "type": "dynamiczone",
+      "components": [
+        "session.question",
+        "session.advice"
+      ]
+    },
+    "Taste": {
+      "type": "dynamiczone",
+      "components": [
+        "session.question",
+        "session.advice"
+      ]
     }
   }
 }

@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_session_questions",
+  "info": {
+    "name": "question",
+    "icon": "clipboard-list"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "correct_answer": {
+      "type": "integer"
+    },
+    "answer": {
+      "type": "component",
+      "repeatable": true,
+      "component": "session.answer"
+    }
+  }
+}

@@ -1,12 +1,12 @@
 {
-  "collectionName": "components_seance_advice",
+  "collectionName": "components_session_advice",
   "info": {
     "name": "advice",
-    "icon": "atlas"
+    "icon": "air-freshener"
   },
   "options": {},
   "attributes": {
-    "description": {
+    "body": {
       "type": "richtext"
     }
   }
