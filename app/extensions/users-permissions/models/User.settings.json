@@ -65,6 +65,14 @@
     },
     "wines": {
       "collection": "wine"
+    },
+    "firstname": {
+      "type": "string",
+      "required": true
+    },
+    "lastname": {
+      "type": "string",
+      "required": true
     }
   }
 }

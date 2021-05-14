@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "codes",
+  "info": {
+    "name": "Code"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "code": {
+      "type": "string"
+    },
+    "session": {
+      "model": "session"
+    }
+  }
+}

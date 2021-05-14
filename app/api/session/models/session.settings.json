@@ -36,26 +36,14 @@
       "collection": "store",
       "via": "sessions"
     },
-    "Nose": {
+    "Content": {
       "type": "dynamiczone",
       "components": [
         "session.question",
         "session.advice"
-      ]
-    },
-    "Eyes": {
-      "type": "dynamiczone",
-      "components": [
-        "session.question",
-        "session.advice"
-      ]
-    },
-    "Taste": {
-      "type": "dynamiczone",
-      "components": [
-        "session.question",
-        "session.advice"
-      ]
+      ],
+      "required": true,
+      "min": 1
     }
   }
 }

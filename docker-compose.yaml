@@ -25,4 +25,4 @@ services:
       MONGO_INITDB_ROOT_USERNAME: strapi
       MONGO_INITDB_ROOT_PASSWORD: strapi
     volumes:
-      - './data:/data'
+      - './data:/data/db'
